@@ -69,6 +69,9 @@ n_variables <- ncol(processed_data)
 
 The cleaned datset contains 132 observations and 6 variables, comprising numeric and categorical variables.
 
+```{r}
+summary(processed_data)
+```
 
 
 
@@ -76,6 +79,7 @@ The cleaned datset contains 132 observations and 6 variables, comprising numeric
 #| echo: false
 #| warning: false
 #| message: false
+
 
 
 
