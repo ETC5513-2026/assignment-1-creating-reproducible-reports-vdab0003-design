@@ -1,0 +1,82 @@
+---
+title: "Marketing Analysis"
+author: "Vibhor Dabas"
+format:
+  html: default
+  pdf: default
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(ggplot2)
+library(knitr)
+library(lubridate)
+
+
+```
+
+## INTRODUCTION
+
+Umpteen number of companies spend heavily on marketing of their product aiming increase in customer purchases. However, it is still a matter of doubt that does it really increase in purchases when a company spends large sum of money on marketing. This report analyses marketing spend and purchase data. The main objective is to analyse whether increase in marketing spending results in purchase outcomes.
+
+
+## RESEARCH QUESTION
+
+Dataset contains information about marketing spend and purchase amounts. It also records how much was spent on customer and their corresponding purchase valeu. To summarise, understanding data and relationship can help optimise marketing strategies by focusing and indentifying patterns between marketing spend and purchasing amount.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+raw_data <- read_csv("data/36619647_Vibhor_Dabas.csv")
+
+```
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+raw_data <- read_csv("data/36619647_Vibhor_Dabas.csv")
+
+processed_data <- raw_data |>
+  mutate(signup_date = parse_date_time(signup_date,
+           orders = c("ymd", "dmy", "mdy", "B d, Y"))) |>
+   
+  
+  select(-notes) |>
+  drop_na(purchase_amount)
+
+```
+## DATASET INTRODUCTION
+
+Processed dataset contains data of 132 customers and 6 variables namely - customer id, signup date, marketing spend, visits, purchase amount and segment. Customers are further divided into three segments Consumers, Enterprises and SMB which will further help to conclude where marketing spend is most effective.
+
+The raw data was cleaned using 3 steps, firstly signup_date column had data in three formats which was then converted to one. Secondly, using select function notes column was removed becasue it was irrelevant for our analysis. Finally, rows with NA values were removed from purchase_amount column. These steps ensured that data is suitable for analysis.
+
+
+### DATASET DESCRIPTION
+
+```{r}
+n_observations <- nrow(processed_data)
+n_variables <- ncol(processed_data)
+```
+
+The cleaned datset contains 132 observations and 6 variables, comprising numeric and categorical variables.
+
+
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+
+```
