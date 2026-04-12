@@ -1,0 +1,19 @@
+---
+title: "appendix"
+author: "Vibhor Dabas"
+format:
+  html: default
+  pdf: default
+editor: visual
+---
+
+## AI ACKNOWLEDGEMENT
+
+I used chatgpt to -
+
+1.  Fix my grammatical errors and spelling mistakes
+2.  To understand summarise function and kable functions to produce table
+
+Here is the link of chatgpt converstaion
+
+<https://chatgpt.com/share/69db6403-c1b8-839a-82a2-8245a7eed365>

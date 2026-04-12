@@ -8,7 +8,7 @@
 
 <meta name="author" content="Vibhor Dabas">
 
-<title>Marketing Analysis</title>
+<title>appendix</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,17 +27,17 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="Marketing Analysis_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Marketing Analysis_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="Marketing Analysis_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="Marketing Analysis_files/libs/quarto-html/popper.min.js"></script>
-<script src="Marketing Analysis_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="Marketing Analysis_files/libs/quarto-html/anchor.min.js"></script>
-<link href="Marketing Analysis_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Marketing Analysis_files/libs/quarto-html/quarto-syntax-highlighting-7c69b197886ae2a34062761d21e44731.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="Marketing Analysis_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="Marketing Analysis_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Marketing Analysis_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="appendix_files/libs/clipboard/clipboard.min.js"></script>
+<script src="appendix_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="appendix_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="appendix_files/libs/quarto-html/popper.min.js"></script>
+<script src="appendix_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="appendix_files/libs/quarto-html/anchor.min.js"></script>
+<link href="appendix_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="appendix_files/libs/quarto-html/quarto-syntax-highlighting-7c69b197886ae2a34062761d21e44731.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="appendix_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="appendix_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="appendix_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -46,12 +46,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Marketing-Analysis.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="appendix.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Marketing Analysis</h1>
+<h1 class="title">appendix</h1>
 </div>
 
 
@@ -74,104 +74,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">INTRODUCTION</h2>
-<p>Many companies spend heavily on marketing their products, aiming to increase customer purchases. However, it is still a matter of doubt whether it really increases purchases when a company spends a large sum of money on marketing. This report analyses marketing spend and purchase data. The main objective is to analyse whether an increase in marketing spending results in improved purchase outcomes.</p>
-</section>
-<section id="research-question" class="level2">
-<h2 class="anchored" data-anchor-id="research-question">RESEARCH QUESTION</h2>
-<p>The main idea behind this report is to determine whether increasing marketing spend per customer results in a larger purchase amount. Understanding this relationship can help businesses optimise their marketing strategies. Also, identifying trends between marketing_spend and customer purchasing behaviour is a main objective of this report.</p>
-</section>
-<section id="dataset-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-introduction">DATASET INTRODUCTION</h2>
-<p>The dataset contains information about marketing spend and purchase amounts. It also records how much was spent on customers and their corresponding purchase value. To summarise, understanding the data and the relationship can help optimise marketing strategies by focusing on and identifying patterns between marketing spend and purchase amount.</p>
-<section id="dataset-description" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-description">DATASET DESCRIPTION</h3>
-<p>Processed dataset contains data of 132 customers and 6 variables namely - customer id, signup date, marketing spend, visits, purchase amount and segment. Customers are further divided into three segments Consumers, Enterprises and SMB which will further help to conclude where marketing spend is most effective.</p>
-<p>The raw data was cleaned using 3 steps, firstly signup_date column had data in three formats which was then converted to one. Secondly, using select function notes column was removed becasue it was irrelevant for our analysis. Finally, rows with NA values were removed from purchase_amount column. These steps ensured that data is suitable for analysis.</p>
-<p>The cleaned or processed dataset contains 132 that depicts number of rows and 6 , comprising numeric and categorical variables.</p>
-<div class="cell">
-<div id="tbl-summary" class="cell quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Summary average of key variables by segment
-</figcaption>
-<div aria-describedby="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output-display">
-<table class="cell caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">segment</th>
-<th style="text-align: right;">avg_spend</th>
-<th style="text-align: right;">avg_purchase</th>
-<th style="text-align: right;">avg_visits</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Consumer</td>
-<td style="text-align: right;">131.2909</td>
-<td style="text-align: right;">94.88782</td>
-<td style="text-align: right;">5.000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Enterprise</td>
-<td style="text-align: right;">144.8981</td>
-<td style="text-align: right;">119.08952</td>
-<td style="text-align: right;">5.142857</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SMB</td>
-<td style="text-align: right;">129.0530</td>
-<td style="text-align: right;">97.37636</td>
-<td style="text-align: right;">5.030303</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</figure>
-</div>
-</div>
-<section id="table-summary" class="level4">
-<h4 class="anchored" data-anchor-id="table-summary">TABLE SUMMARY</h4>
-<p>The table above <a href="#tbl-summary" class="quarto-xref">Table&nbsp;1</a> depicts average of - 1. Marketing spend 2. Purchase amount 3. Customer Visits among all three segments. It also shows how customer behaviour in different segments chnages by marketing efforts.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-spend-purchase" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-spend-purchase-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Marketing-Analysis_files/figure-html/fig-spend-purchase-1.png" class="img-fluid figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spend-purchase-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Marketing Spend vs Purchase Amount
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-spend-groups" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-spend-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Marketing-Analysis_files/figure-html/fig-spend-groups-1.png" class="img-fluid figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spend-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Purchase amount across
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
-</section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">RESULTS</h2>
-<p><a href="#fig-spend-purchase" class="quarto-xref">Figure&nbsp;1</a> represents relationship between Marketing Spend and Purchase Amount. There is a clear positive trend depiciting that customers receiving higher marketing tends to spend more on purchases. However some variability exists but overall trend is upwards shown by “blue” line.</p>
-<p><a href="#fig-spend-groups" class="quarto-xref">Figure&nbsp;2</a> supports observations of figure 1 by grouping customers into 3 different level of marketing spend. It also clearly indicates that increased marketing spend leads to more customer spending.</p>
-<p>In conclusion, these findings from above figures suggests that higher marketing spend is associated with higher purchase amounts, answering our research question positively.</p>
+<section id="ai-acknowledgement" class="level2">
+<h2 class="anchored" data-anchor-id="ai-acknowledgement">AI ACKNOWLEDGEMENT</h2>
+<p>I used chatgpt to -</p>
+<ol type="1">
+<li>Fix my grammatical errors and spelling mistakes</li>
+<li>To understand summarise function and kable functions to produce table</li>
+</ol>
+<p>Here is the link of chatgpt converstaion</p>
+<p><a href="https://chatgpt.com/share/69db6403-c1b8-839a-82a2-8245a7eed365" class="uri">https://chatgpt.com/share/69db6403-c1b8-839a-82a2-8245a7eed365</a></p>
 </section>
 
 </main>
